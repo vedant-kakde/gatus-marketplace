@@ -1,0 +1,46 @@
+{
+  "name": "Gatus",
+  "version": "1.0",
+  "description": "A self-hosted status page for monitoring services.",
+  "logo": "metadata/logo.png",
+  "categories": ["Monitoring", "DevOps"],
+  "website": "https://github.com/TwiN/gatus",
+  "variables": [
+    {
+      "name": "monitor_host",
+      "description": "The hostname or IP of the service to monitor (e.g., example.com)",
+      "type": "string",
+      "default": "example.com"
+    },
+    {
+      "name": "monitor_path",
+      "description": "The path to monitor on the host (default: /)",
+      "type": "string",
+      "default": "/"
+    },
+    {
+      "name": "monitor_port",
+      "description": "The port of the service to monitor (default: 80)",
+      "type": "string",
+      "default": "80"
+    },
+    {
+      "name": "alert_threshold",
+      "description": "The number of failed checks before triggering an alert (default: 3)",
+      "type": "string",
+      "default": "3"
+    },
+    {
+      "name": "username",
+      "description": "Username to access the Gatus dashboard",
+      "type": "string",
+      "default": "admin"
+    },
+    {
+      "name": "password",
+      "description": "Password to access the Gatus dashboard",
+      "type": "string",
+      "default": "password"
+    }
+  ]
+}
