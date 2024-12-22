@@ -1,0 +1,6 @@
+{
+  "api_key": "your-vultr-api-key",
+  "region": "ewr",
+  "size": "vc2-1c-2gb",
+  "image_id": "ubuntu-20-04-x64"
+}
