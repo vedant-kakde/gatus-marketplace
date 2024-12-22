@@ -1,0 +1,23 @@
+{
+  "variables": {
+    "region": "",
+    "size": "",
+    "image_id": ""
+  },
+  "builders": [
+    {
+      "type": "vultr",
+      "api_key": "{{user `api_key`}}",
+      "region": "{{user `region`}}",
+      "size": "{{user `size`}}",
+      "image_id": "{{user `image_id`}}",
+      "snapshot_description": "Gatus Marketplace Image"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "./scripts/install.sh"
+    }
+  ]
+}
